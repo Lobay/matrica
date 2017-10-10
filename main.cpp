@@ -1,27 +1,26 @@
 #include<iostream>
 using namespace std;
-int main(){
-int m, n;
-cin>>m;
-cin>>n;
-int a[m][n];
-int b[m][n];
-int c[m][n];
-for (int i=0; i<m; i++)
-        for(int j=0; j<n; j++)
+int main() 
 {
-        cin >> a[i][j];
-}
-for (int i=0; i<m;  i++)
-        for(int j=0; j<n; j++)
-{
-        cin >> b[i][j];
-        c[m][n]=a[m][n]+b[m][n];
-}
-for (int i=0; i<m; i++)
-        for(int j=0; j<n; j++)
-{
-        cout << c[i][j]<<" ";
-}
+ int n, m, i, j;
+ int a[n][m];
+ int b[n][m];
+     cin >> n;
+     cin >> m;
+ for ( i=0; i<n; i++)
+  for ( j=0; j<m; j++)
+    {
+      cin >> a[i][j];
+    }
+ for ( i=0; i<n; i++)
+  for ( j=0; j<m; j++)
+  {
+      cin >> b[i][j];
+  }
+ for ( i=0; i<n; i++) 
+  for ( j=0; j<m; j++)
+  {
+      cout << a[i][j] + b[i][j] <<" ";
+  }
 return 0;
-} 
+}
